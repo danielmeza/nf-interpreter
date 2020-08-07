@@ -13,8 +13,6 @@ list(APPEND ChibiOSnfOverlay_INCLUDE_DIRS ${PROJECT_SOURCE_DIR}/targets/CMSIS-OS
 list(APPEND ChibiOSnfOverlay_INCLUDE_DIRS ${PROJECT_SOURCE_DIR}/targets/CMSIS-OS/ChibiOS/nf-overlay/os/hal/include/stm32_flash)
 # component STM32_CRC
 list(APPEND ChibiOSnfOverlay_INCLUDE_DIRS ${PROJECT_SOURCE_DIR}/targets/CMSIS-OS/ChibiOS/nf-overlay/os/hal/include/stm32_crc)
-# component STM32_RNG
-list(APPEND ChibiOSnfOverlay_INCLUDE_DIRS ${PROJECT_SOURCE_DIR}/targets/CMSIS-OS/ChibiOS/nf-overlay/os/hal/include/stm32_rng)
 # component STM32_FSMC (Flexible Memory Controller)
 list(APPEND ChibiOSnfOverlay_INCLUDE_DIRS ${PROJECT_SOURCE_DIR}/targets/CMSIS-OS/ChibiOS/nf-overlay/os/hal/include/stm32_fsmc)
 # component STM32_ONEWIRE (One Wire driver)
@@ -45,8 +43,6 @@ list(APPEND ChibiOSnfOverlay_SOURCES ${PROJECT_SOURCE_DIR}/targets/CMSIS-OS/Chib
 list(APPEND ChibiOSnfOverlay_SOURCES ${PROJECT_SOURCE_DIR}/targets/CMSIS-OS/ChibiOS/nf-overlay/os/hal/src/stm32_flash/hal_stm32_flash.c)
 # component STM32_CRC
 list(APPEND ChibiOSnfOverlay_SOURCES ${PROJECT_SOURCE_DIR}/targets/CMSIS-OS/ChibiOS/nf-overlay/os/hal/src/stm32_crc/hal_stm32_crc.c)
-# component STM32_RNG
-list(APPEND ChibiOSnfOverlay_SOURCES ${PROJECT_SOURCE_DIR}/targets/CMSIS-OS/ChibiOS/nf-overlay/os/hal/src/stm32_rng/hal_stm32_rng.c) 
 # component STM32_FSMC (Flexible Memory Controller)
 list(APPEND ChibiOSnfOverlay_SOURCES ${PROJECT_SOURCE_DIR}/targets/CMSIS-OS/ChibiOS/nf-overlay/os/hal/src/stm32_fsmc/hal_stm32_fsmc.c)
 # component STM32_ONEWIRE (One Wire driver)

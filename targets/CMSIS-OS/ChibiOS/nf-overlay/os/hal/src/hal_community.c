@@ -49,10 +49,6 @@ void halCommunityInit(void) {
   crcInit();
 #endif
 
-#if (HAL_NF_USE_STM32_RNG == TRUE)
-  rngInit();
-#endif
-
 #if HAL_NF_USE_FSMC
   stm32FsmcInit();
 #endif

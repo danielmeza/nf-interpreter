@@ -17,11 +17,6 @@
 #define HAL_NF_USE_STM32_CRC                    TRUE
 #endif
 
-#if !defined(HAL_NF_USE_STM32_RNG)
-// the default for this driver is to be included
-#define HAL_NF_USE_STM32_RNG                    TRUE
-#endif
-
 #if !defined(HAL_NF_USE_FSMC)
 #define HAL_NF_USE_FSMC                         FALSE
 #endif
@@ -45,7 +40,6 @@
 #include "stm32_qspi/hal_stm32_qspi.h"
 #include "stm32_flash/hal_stm32_flash.h"
 #include "stm32_crc/hal_stm32_crc.h"
-#include "stm32_rng/hal_stm32_rng.h"
 #include "stm32_fsmc/hal_stm32_fsmc.h"
 #include "stm32_onewire/hal_stm32_onewire.h"
 
