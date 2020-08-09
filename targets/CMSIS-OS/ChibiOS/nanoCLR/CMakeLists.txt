@@ -48,7 +48,7 @@ if(USE_RNG)
         ${TARGET_SERIES} STREQUAL "STM32F4xx" OR 
         ${TARGET_SERIES} STREQUAL "STM32F7xx" OR
         ${TARGET_SERIES} STREQUAL "STM32H7xx")
-
+        
         list(APPEND TARGET_CHIBIOS_NANOCLR_SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/targetRandom.cpp")  
 
     else()

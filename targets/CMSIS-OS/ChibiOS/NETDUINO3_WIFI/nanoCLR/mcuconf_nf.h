@@ -6,4 +6,9 @@
 #ifndef _MCUCONF_NF_H_
 #define _MCUCONF_NF_H_
 
+/*
+ * TRNG driver system settings.
+ */
+#define STM32_TRNG_USE_RNG1                 TRUE
+
 #endif // _MCUCONF_NF_H_

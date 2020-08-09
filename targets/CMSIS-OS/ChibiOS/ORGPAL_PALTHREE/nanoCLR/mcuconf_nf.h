@@ -19,4 +19,9 @@
 #define STM32_SDRAM_USE_FSMC_SDRAM1         FALSE
 #define STM32_SDRAM_USE_FSMC_SDRAM2         TRUE
 
+/*
+ * TRNG driver system settings.
+ */
+#define STM32_TRNG_USE_RNG1                 TRUE
+
 #endif // _MCUCONF_NF_H_

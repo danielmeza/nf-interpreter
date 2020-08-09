@@ -8,25 +8,29 @@
 
 void CLR_RT_Random::Initialize()
 {
-    rngStart();
+    trngStart(&TRNGD1, NULL);
 }
 
 void CLR_RT_Random::Initialize( int seed )
 {
     (void)seed;
 
-    rngStart();
+    trngStart(&TRNGD1, NULL);
 }
 
 uint32_t CLR_RT_Random::Next()
 {
-    return rngGenerateRandomNumber();
+    uint32_t rand;
+    trngGenerate(&TRNGD1, 32, rand);
+    return 
 }
 
 double CLR_RT_Random::NextDouble()
 {
+    double rand;
     // the hardware generator returns a value between 0 - 0xFFFFFFFF
-    return ((double)rngGenerateRandomNumber()) / ((double)0xFFFFFFFF);
+    trngGenerate(&TRNGD1, (double)0xFFFFFFFF, rand);
+    return rand;
 }
 
 void CLR_RT_Random::NextBytes(unsigned char* buffer, unsigned int count)
@@ -35,6 +39,6 @@ void CLR_RT_Random::NextBytes(unsigned char* buffer, unsigned int count)
 
     for(i = 0; i < count; i++)
     {
-        buffer[i] = (unsigned char)rngGenerateRandomNumber();
+        buffer[i] = (unsigned char)trngGenerate(&TRNGD1,1, i);
     }
 }
